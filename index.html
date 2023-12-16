@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #para {
+      font-size: 50px;
+      font-weight: bold;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+  <script>
+    
+        let para1 = document.getElementById("para");
+        let text = "habibullahcode....";
+        increament = 1;
+    function para(){
+       
+        para  = text.slice(0,increament);
+        para1.innerText=para;
+        para1.style.color="red"
+        increament < text.length ? increament++ : increament=1 ;
+    }
+    setInterval(para , 200)
+  </script>    
+</body>
+</html>
